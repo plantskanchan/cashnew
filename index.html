@@ -12,6 +12,41 @@
   </head>
   <body>
 
+	  <!-- modal window-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="modal-box">
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <!-- Close Button -->
+                            <button type="button" class="close" id="closeButton" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+
+                            <div class="modal-body">
+                                <center><img src="files/img/nlogo.png" style="width:50%;"></center>
+                                <h3 style="text-align: center;font-size: 24px;padding-top:30px;">
+                                    <a style="color:#0237b5" href="tel:+1844-863-9114">
+                                        <strong>Call Us: 1-844-863-9114</strong>
+                                    </a>
+                                </h3>
+                                <h5 class="title">TRUSTED BY MILLIONS <br>SAVE UPTO 60%*</h5>
+                                <p class="description">LifeLock & Norton 360 Support</p>
+                                <p class="description">Setup, Activation & Installation</p>
+                                <p class="description">Billing, Cancellation or Refund</p>
+                                <p class="description">Report an Unauthorized Charge</p><br>
+                                <center><a href="tel:+1844-863-9114" class="btn-get" style="font-weight:700;width:180px;">Click to Call</a></center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     <nav id="navbar">
         <div class="navbar-left">
             <img src="Full-Logo.wine.png" alt="" />
@@ -59,45 +94,24 @@
         </p>
       </div>
     </div>
-<a aria-label="Scroll to the top of the page" href="#" id="scroll-top" class="scroll-top-right"><i class=" fa fa-angle-up" aria-hidden="true" role="img"></i></a>
-
-
-
-
-			<script type='text/javascript'>
-				const lazyloadRunObserver = () => {
-					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
-					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
-						entries.forEach( ( entry ) => {
-							if ( entry.isIntersecting ) {
-								let lazyloadBackground = entry.target;
-								if( lazyloadBackground ) {
-									lazyloadBackground.classList.add( 'e-lazyloaded' );
-								}
-								lazyloadBackgroundObserver.unobserve( entry.target );
-							}
-						});
-					}, { rootMargin: '200px 0px 200px 0px' } );
-					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
-						lazyloadBackgroundObserver.observe( lazyloadBackground );
-					} );
-				};
-				const events = [
-					'DOMContentLoaded',
-					'elementor/lazyload/observe',
-				];
-				events.forEach( ( event ) => {
-					document.addEventListener( event, lazyloadRunObserver );
-				} );
-			</script>
-<a  href="tel:18335823468" id="callnowbutton" class="call-now-button  cnb-zoom-100  cnb-zindex-10  cnb-text  cnb-full cnb-full-bottom cnb-displaymode cnb-displaymode-mobile-only" style="background-color:#008A00;"><img alt="" src=button-new-buttonbar.png"></script>
-<script id="oceanwp-main-js-extra">
-var oceanwpLocalize = {"nonce":"bff7530a6e","isRTL":"","menuSearchStyle":"drop_down","mobileMenuSearchStyle":"disabled","sidrSource":null,"sidrDisplace":"1","sidrSide":"left","sidrDropdownTarget":"link","verticalHeaderTarget":"link","customScrollOffset":"0","customSelects":".woocommerce-ordering .orderby, #dropdown_product_cat, .widget_categories select, .widget_archive select, .single-product .variations_form .variations select","ajax_url":"https:\/\/24x7-expert.help.service.getbusinessfirst.online\/wp-admin\/admin-ajax.php","oe_mc_wpnonce":"c5d70267d8"};
-</script>
     <footer class="footer">
       <h3>We Are Here for You 24/7</h3>
     <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms &amp; Conditions</a></p>
     </footer>
+<script>
+        $(document).ready(function () {
+            setTimeout(function () {
+                $('#myModal').modal('show');
+            }, 0);
+        });
+    </script>
+
+    <!-- Custom JavaScript to close the modal -->
+<script>
+    document.getElementById('closeButton').addEventListener('click', function() {
+        $('#myModal').modal('hide');  // Close the modal programmatically
+    });
+</script>
   </body>
 
 </html>
